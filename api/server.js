@@ -21,4 +21,8 @@ server.get('/', (req, res) => {
     res.status(200).send((`<h1>API: Up Up and Away, welcome Flexporters!</h1>`))
 })
 
+server.get('/', (req, res) => {
+    res.status(200).send(('<h1>Hello Flexporters!</h1>'))
+})
+
 module.exports = server;
