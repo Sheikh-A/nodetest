@@ -23,7 +23,7 @@ function Register(props) {
         axios.post('https://astesting123.herokuapp.com/api/auth/register', user)
         //axios.post('http://localhost:3300/api/auth/register', user)
         .then(res => {
-            props.history.push('https://nodetest-one.vercel.app/login');
+            props.history.push('/login');
         })
         .catch(err => {
             console.log(err)
