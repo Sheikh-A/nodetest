@@ -1,6 +1,7 @@
 const express = require('express');
-const server = require('../api/server');
 const shortid = require('shortid');
+
+const router = express.Router();
 
 let dummy_clients = [
 
@@ -12,14 +13,17 @@ let dummy_clients = [
 
 ]
 
-server.get('/', (req, res) => {
+router.get('/', (req, res) => {
     res.status(200).json(dummy_clients);
 });
 
-server.post('/', (req, res) => {
+router.post('/', (req, res) => {
     const newClient = req.body;
 
     newClient.id = shortid.generate();
     dummy_clients.push(newClient);
     res.status(201).json(newClient);
 });
+
+
+module.exports = router;
