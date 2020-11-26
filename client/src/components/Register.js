@@ -3,7 +3,7 @@ import axios from 'axios'
 
 function Register(props) {
 
-    
+
 
     const [user, setUser] = useState({
       username: "",
@@ -19,7 +19,8 @@ function Register(props) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        axios.post('http://localhost:3300/api/auth/register', user)
+        axios.post('https://astesting123.herokuapp.com/api/register', user)
+        //axios.post('http://localhost:3300/api/auth/register', user)
         .then(res => {
             props.history.push('/login');
         })
@@ -43,7 +44,7 @@ function Register(props) {
             name="password"
             type="password"
         />
-        <button type="submit">Register</button> 
+        <button type="submit">Register</button>
     </form>
     );
 }

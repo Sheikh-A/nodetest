@@ -17,13 +17,14 @@ function Login(props) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        axios.post('http://localhost:3300/api/auth/login', user)
+        axios.post('https://astesting123.herokuapp.com/api/login', user)
+        //axios.post('http://localhost:3300/api/auth/login', user)
         .then(res => {
             console.log("login post response" , res);
             localStorage.setItem('token', JSON.stringify(res.data.token))
             props.setLogged(true);
             props.history.push('/jokeslist');
-            
+
         })
         .catch(err => {
             console.log(err)
@@ -45,7 +46,7 @@ function Login(props) {
             name="password"
             type="password"
         />
-        <button type="submit">Login</button> 
+        <button type="submit">Login</button>
     </form>
     );
 }
