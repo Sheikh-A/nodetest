@@ -17,7 +17,7 @@ function Login(props) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        axios.post('https://astesting123.herokuapp.com/api/login', user)
+        axios.post('https://astesting123.herokuapp.com/api/auth/login', user)
         //axios.post('http://localhost:3300/api/auth/login', user)
         .then(res => {
             console.log("login post response" , res);

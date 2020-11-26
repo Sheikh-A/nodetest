@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import axiosWithAuth from "../utils/axiosWithAuth.js";
 
 function Register(props) {
 
@@ -19,7 +20,7 @@ function Register(props) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        axios.post('https://astesting123.herokuapp.com/api/register', user)
+        axios.post('https://astesting123.herokuapp.com/api/auth/register', user)
         //axios.post('http://localhost:3300/api/auth/register', user)
         .then(res => {
             props.history.push('/login');
