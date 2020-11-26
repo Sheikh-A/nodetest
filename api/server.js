@@ -15,4 +15,8 @@ server.use(express.json());
 server.use('/api/auth', authRouter);
 server.use('/api/jokes', authenticate, jokesRouter);
 
+server.get('/', (req, res) => {
+    res.status(200).send((`<h1>API: Up Up and Away, welcome Flexporters!</h1>`))
+})
+
 module.exports = server;
