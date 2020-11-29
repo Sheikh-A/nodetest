@@ -3,6 +3,7 @@ import axios from 'axios'
 
 function Login(props) {
 
+
     const [user, setUser] = useState({
       username: "",
       password: "",
@@ -17,13 +18,12 @@ function Login(props) {
 
     const handleSubmit = e => {
         e.preventDefault();
-        axios.post('https://astesting123.herokuapp.com/api/auth/login', user)
-        //axios.post('http://localhost:3300/api/auth/login', user)
+        axios.post('https://aliport.herokuapp.com/api/auth/login', user)
         .then(res => {
             console.log("login post response" , res);
             localStorage.setItem('token', JSON.stringify(res.data.token))
             props.setLogged(true);
-            props.history.push('/jokeslist');
+            props.history.push('/flexdata');
 
         })
         .catch(err => {
@@ -32,22 +32,39 @@ function Login(props) {
     }
 
   return (
-    <form onSubmit={handleSubmit}>
-        <input
-            onChange={handleChange}
-            placeholder="username"
-            value={user.username}
-            name="username"
-        />
-        <input
-            onChange={handleChange}
-            placeholder="password"
-            value={user.password}
-            name="password"
-            type="password"
-        />
-        <button type="submit">Login</button>
+    <div className="registerContainer negative-top-margin-adjustment">
+        <div>
+            <div>
+                <h1>Login</h1>
+            </div>
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <div>
+                        <div>
+                            <input
+                                id="firstName"
+                                onChange={handleChange}
+                                placeholder="username"
+                                value={user.username}
+                                name="username"
+                            />
+                        </div>
+                        <div>
+                            <input
+                                    id="firstName"
+                                    onChange={handleChange}
+                                    placeholder="password"
+                                    value={user.password}
+                                    name="password"
+                                    type="password"
+                            />
+                        </div>
+                    </div>
+                </div>
+        <button className="blackButton" type="submit">Login</button>
     </form>
+    </div>
+    </div>
     );
 }
 
