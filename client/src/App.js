@@ -6,9 +6,8 @@ import Login from './components/Login';
 import Countries from './components/Countrys';
 import Flex from './components/Flex';
 import FlexShipments from './components/FlexShipments';
-import AddClient from './components/AddClient.js';
+
 import logo from './assets/logo.png';
-import AddShipment from './components/AddShipment';
 
 
 
@@ -32,8 +31,6 @@ function App(props) {
         <NavLink to = '/flexdata'><button >Clients</button></NavLink>
         <NavLink to = '/flexshipments'><button >Shipments</button></NavLink>
         <NavLink to = '/countrieslist'><button >Countries</button></NavLink>
-        <NavLink to = '/flexCustomer'><button >Add Client</button></NavLink>
-        <NavLink to = '/flexShipment'><button >Add Shipment</button></NavLink>
         <NavLink to = '/flexpups'><button >Flex Pups!</button></NavLink>
 
 
@@ -45,8 +42,6 @@ function App(props) {
       <Route path = '/countrieslist' render = {(props) => <Countries {...props} />} />
       <Route path = '/flexdata' render = {(props) => <Flex {...props} />} />
       <Route path = '/flexshipments' render = {(props) => <FlexShipments {...props} />} />
-      <Route path = '/flexCustomer' render = {(props) => <AddClient {...props} />} />
-      <Route path = '/flexShipment' render = {(props) => <AddShipment {...props} />} />
 
 
       <Route exact path = '/' render={() =>
