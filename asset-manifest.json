@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Sheikh-A/nodetest/static/css/main.d3b4e434.chunk.css",
+    "main.css": "/Sheikh-A/nodetest/static/css/main.608ada58.chunk.css",
     "main.js": "/Sheikh-A/nodetest/static/js/main.650029a1.chunk.js",
     "main.js.map": "/Sheikh-A/nodetest/static/js/main.650029a1.chunk.js.map",
     "runtime-main.js": "/Sheikh-A/nodetest/static/js/runtime-main.c8f531ba.js",
@@ -8,16 +8,16 @@
     "static/js/2.7c48930e.chunk.js": "/Sheikh-A/nodetest/static/js/2.7c48930e.chunk.js",
     "static/js/2.7c48930e.chunk.js.map": "/Sheikh-A/nodetest/static/js/2.7c48930e.chunk.js.map",
     "index.html": "/Sheikh-A/nodetest/index.html",
-    "precache-manifest.23df9e379b2208ac5852a4ded44c3fc8.js": "/Sheikh-A/nodetest/precache-manifest.23df9e379b2208ac5852a4ded44c3fc8.js",
+    "precache-manifest.3ad61563f0c41172cf3bf02e3d23f4a1.js": "/Sheikh-A/nodetest/precache-manifest.3ad61563f0c41172cf3bf02e3d23f4a1.js",
     "service-worker.js": "/Sheikh-A/nodetest/service-worker.js",
-    "static/css/main.d3b4e434.chunk.css.map": "/Sheikh-A/nodetest/static/css/main.d3b4e434.chunk.css.map",
-    "static/media/App.css": "/Sheikh-A/nodetest/static/media/dots.06dfc876.svg",
+    "static/css/main.608ada58.chunk.css.map": "/Sheikh-A/nodetest/static/css/main.608ada58.chunk.css.map",
+    "static/media/App.css": "/Sheikh-A/nodetest/static/media/dots.f2ab9914.svg",
     "static/media/logo.png": "/Sheikh-A/nodetest/static/media/logo.40f1a854.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c8f531ba.js",
     "static/js/2.7c48930e.chunk.js",
-    "static/css/main.d3b4e434.chunk.css",
+    "static/css/main.608ada58.chunk.css",
     "static/js/main.650029a1.chunk.js"
   ]
 }
